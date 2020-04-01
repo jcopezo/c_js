@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript" src='scripts.js'></script>
+    <meta charset="utf-8">
+    <title>Practica_04</title>
+  </head>
+  <body>
+    <h1>Declaraciones y Sistaxis</h1>
+    <p>Un programa de computadora es una lista de instrucciones a ser ejecutadas en
+      un ordenador. En <span>JavaScript</span> esta lista de instrucciones se llama
+      <span>declaraciones</span>, las cuales se ejecuta en el navegador web. Para que
+      funcione correctamente hay que tener la sistaxis correcta, pues el programa
+      puede mal interpretar. A continuacion vemos algunas items principales:
+    </p>
+      <button type="button" onclick="pyc('P&C')">Punto_coma</button>
+      <button type="button" onclick="pyc('EsB')">EspacioBlanco</button>
+      <button type="button" onclick="pyc('M&M')">Minu&Mayu</button>
+      <button type="button" onclick="pyc('SIN')">Sistaxis</button><br>
+
+    <p id="P&C" style="display:none" class="codigo">En JavaScript se utiliza
+      punto y coma para separar sentencias y finalizar la instrucciones. Se
+      puede poner diferente setencias en una sola linea:
+      <br><val>var</val> a, b, c;<br>a=5; b=6; c=a+b;
+    </p>
+    <p id="EsB" class="codigo" style="display:none">JavaScript ignora múltiples
+      espacios. Por lo que las declaraciones a continuación son las mismas para
+      el programa.<br>  <val>var</val> t=<str>"Hola"</str>;<br>
+                        <val>var</val>  t  =  <str>"Hola"</str>;
+    </p>
+    <p id="M&M" class="codigo" style="display:none">JavaScript distinge entre
+      mayúsculas y minúsculas, por lo que las variables <span>VALOR</span>,
+      <span>Valor</span> y <span>valor</span> son diferentes.<br>
+      <val>var</val> VALOR=<str>"Pezo"</str>;<br>
+      <val>var</val> Valor=50.1;<br>
+      <val>var</val> valor=<co>true</co>;
+    </p>
+    <p id="SIN" class="codigo" style="display:none">Para usar los caracteres
+      especiales en JavaScript como tilde(á), diéresis(ü), entre otros, se debe
+      usar la etiqueta <<span>meta</span> charset=<str>"utf-8"</str>>.<br><br>
+      Lo escrito después de dos barras <tex>//Texto prueba</tex> o entre 
+      <tex>/*Texto prueba*/</tex> es interpretado por JavaScript como un
+      comentario y asi sea codigo no lo ejecutará. Generalmente son usados para
+      crear comentario que indica la fucionaridad del código.
+    </p>
+
+    <p id='parrafo'>Parrafo de prueba</p>
+    <button type="button" onclick="cambio()">Cambiar</button>
+    <button type="button" onclick="respuesta()">Valor W</button>
+    <button type="button" onclick="operacion('or')">FuncionOR</button>
+    <button type="button" onclick="operacion('and')">FuncionAND</button><br>
+    <p id="p2">valor</p>
+
+    <button type="button" onclick="pyc('PaRe')">Lista de Palabras Reservadas</button><br>
+    <div id="PaRe" style="display:none">
+      <h2>Palabras Reservada</h2>
+      <p>En JavaScript exite palabras que estan reservadas y no puede ser usadas
+        para declarar variables, debido a que esta palabras cumple funciones
+        especificas. A continuación vemos un listados de ellas:</p>
+      <table>
+        <tbody>
+          <tr><td>abstract</td><td>arguments</td><td>await*</td><td>boolean</td><td>break</td><td>byte</td></tr>
+          <tr><td>case</td><td>catch</td><td>char</td><td>class*</td><td>const</td><td>continue</td></tr>
+          <tr><td>debugger</td><td>default</td><td>delete</td><td>do</td><td>double</td><td>else</td></tr>
+          <tr><td>enum*</td><td>eval</td><td>export*</td><td>extends*</td><td>false</td><td>final</td></tr>
+          <tr><td>finally</td><td>float</td><td>for</td><td>function</td><td>goto</td><td>if</td></tr>
+          <tr><td>implements</td><td>import*</td><td>in</td><td>instanceof</td><td>int</td><td>interface</td></tr>
+          <tr><td>let*</td><td>long</td><td>native</td><td>new</td><td>null</td><td>package</td></tr>
+          <tr><td>private</td><td>protected</td><td>public</td><td>return</td><td>short</td><td>static</td></tr>
+          <tr><td>super*</td><td>switch</td><td>synchronized</td><td>this</td><td>throw</td><td>throws</td></tr>
+          <tr><td>transient</td><td>true</td><td>try</td><td>typeof</td><td>var</td><td>void</td></tr>
+          <tr><td>volatile</td><td>while</td><td>with</td><td>yield</td><td></td><td></td></tr>
+        </tbody>
+    </table>
+    </div>
+
+  </body>
+</html>

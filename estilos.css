@@ -1,0 +1,16 @@
+table {border:2px solid #000;border-collapse:collapse;width: 100%;}
+
+th, td {border:1px solid #ccc;text-align:left;height:20px;vertical-align:top;padding:8px 8px;}
+
+tr {border:1px solid #ccc;}
+
+td:hover {background-color:#9999ff;}
+
+span {color:#4499ff;}
+
+
+.codigo>span {color:#F80000;}
+p>co {color: #5500ff;}
+p>val {color: #00aaff;}
+p>str {color: #b80;}
+p>tex {color: #939188;}
